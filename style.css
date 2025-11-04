@@ -1,63 +1,67 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general y fuente */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Estilo para el header */
+/* Estilo para el encabezado */
 header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-/* Estilo para el menú de navegación */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #444;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    color: #ff6347; /* color cuando pasa el mouse */
+/* Estilo para los títulos de las secciones */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* Estilo para las secciones */
 section {
-    background-color: white;
-    margin: 20px auto;
+    margin-bottom: 20px;
     padding: 20px;
-    width: 80%;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    color: #333;
+/* Estilo para las listas dentro de las secciones */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
 }
 
 /* Estilo para el pie de página */
 footer {
     text-align: center;
+    margin-top: 20px;
     padding: 10px;
     background-color: #333;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border-radius: 8px;
 }
